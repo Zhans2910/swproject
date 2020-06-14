@@ -39,34 +39,34 @@ public class CalculatorTest {
     @Test
     public void Test6() throws Exception{
         Calculator c = new Calculator();
-        Assertions.assertEquals(5.0, c.calculateMono(Calculator.MonoOperatorModes.abs, -5.0));
-        Assertions.assertEquals(5.0, c.calculateMono(Calculator.MonoOperatorModes.abs, 5.0));
+        Assert.assertEquals(5.0, c.calculateMono(Calculator.MonoOperatorModes.abs, -5.0));
+        Assert.assertEquals(5.0, c.calculateMono(Calculator.MonoOperatorModes.abs, 5.0));
     }
 
     @Test
     public void Test7() throws Exception{
         Calculator c = new Calculator();
-        Assertions.assertEquals(.45, c.calculateMono(Calculator.MonoOperatorModes.rate, 45.0));
+        Assert.assertEquals(.45, c.calculateMono(Calculator.MonoOperatorModes.rate, 45.0));
     }
 
     @Test
     public void Test8() throws Exception {
         Calculator c = new Calculator();
-        Assertions.assertEquals(3.0, c.calculateMono(Calculator.MonoOperatorModes.log, 1000.0));
+        Assert.assertEquals(3.0, c.calculateMono(Calculator.MonoOperatorModes.log, 1000.0));
     }
 
     @Test
     public void Test9() throws Exception {
         Calculator c = new Calculator();
         c.calculateBi(Calculator.BiOperatorModes.multiply, 4.8);
-        Assertions.assertEquals(9.6, c.calculateBi(Calculator.BiOperatorModes.normal, 2.0));
+        Assert.assertEquals(9.6, c.calculateBi(Calculator.BiOperatorModes.normal, 2.0));
     }
 
     @Test
     public void Test10() throws Exception {
 	Calculator c = new Calculator();
 	c.calculateBi(Calculator.BiOperatorModes.minus, 6.565);
-	Assertions.assertEquals(5.265, c.calculateBi(Calculator.BiOperatorModes.normal, 1.3));
+	Assert.assertEquals(5.265, c.calculateBi(Calculator.BiOperatorModes.normal, 1.3));
     }
 
 
