@@ -96,5 +96,19 @@ public class CalculatorTest {
         Double result= c.calculateBi(Calculator.BiOperatorModes.NORMAL, 1.4);
         Assert.assertEquals( (Double) 10.0, result);
     }
-
+    @Test
+    public void Test15() throws Exception {
+        Calculator c = new Calculator();
+        c.calculateBi(Calculator.BiOperatorModes.NORMAL, 2.0);
+        Assert.assertTrue(Double.isNaN(c.calculateBi(Calculator.BiOperatorModes.NORMAL, 3.0)));
+    }
+    @Test
+    public void Test16() throws Exception {
+        Calculator c = new Calculator();
+        c.calculateBi(Calculator.BiOperatorModes.X_POWER_OF_Y, 2.0);
+        Double result= c.calculateBi(Calculator.BiOperatorModes.NORMAL, 3.0);
+        Assert.assertEquals( (Double) 8.0, result);
+    }
 }
+
+
