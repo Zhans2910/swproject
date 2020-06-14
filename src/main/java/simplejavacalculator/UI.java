@@ -38,12 +38,27 @@ public class UI implements ActionListener {
    private final JPanel panelSub8;
    
    private final JTextArea text;
-   private final JButton but[], butAdd, butMinus, butMultiply, butDivide,
-      butEqual, butCancel, butSquareRoot, butSquare, butOneDevidedBy,
-      butCos, butSin, butTan, butxpowerofy, butlog, butrate, butabs, butBinary;
+   private final JButton[] but; 
+   private final JButton butAdd; 
+   private final JButton butMinus; 
+   private final JButton butMultiply; 
+   private final JButton butDivide;
+   private final JButton butEqual;
+   private final JButton butCancel;
+   private final JButton butSquareRoot;
+   private final JButton butSquare;
+   private final JButton butOneDevidedBy;
+   private final JButton butCos; 
+   private final JButton butSin; 
+   private final JButton butTan;
+   private final JButton butxpowerofy;
+   private final JButton butlog; 
+   private final JButton butrate; 
+   private final JButton butabs;
+   private final JButton butBinary;
    private final Calculator calc;
    
-   private final String[] buttonValue = {"0", "1", "2", "3", "4", "5", "6",
+   private static final String[] buttonValue = {"0", "1", "2", "3", "4", "5", "6",
       "7", "8", "9"};
    
    private final Font font;
@@ -215,66 +230,66 @@ public class UI implements ActionListener {
       }
       
       if (source == butAdd) {
-         writer(calc.calculateBi(Calculator.BiOperatorModes.add, reader()));
+         writer(calc.calculateBi(Calculator.BiOperatorModes.ADD, reader()));
       }
       
       if (source == butMinus) {
-         writer(calc.calculateBi(Calculator.BiOperatorModes.minus, reader()));
+         writer(calc.calculateBi(Calculator.BiOperatorModes.MINUS, reader()));
       }
       
       if (source == butMultiply) {
-         writer(calc.calculateBi(Calculator.BiOperatorModes.multiply,
+         writer(calc.calculateBi(Calculator.BiOperatorModes.MULTIPLY,
                                  reader()));
       }
       
       if (source == butDivide) {
          writer(calc
-                   .calculateBi(Calculator.BiOperatorModes.divide, reader()));
+                   .calculateBi(Calculator.BiOperatorModes.DIVIDE, reader()));
       }
       if (source == butxpowerofy) {
          writer(calc
-                   .calculateBi(Calculator.BiOperatorModes.xpowerofy, reader()));
+                   .calculateBi(Calculator.BiOperatorModes.X_POWER_OF_Y , reader()));
       }
       
       if (source == butSquare) {
-         writer(calc.calculateMono(Calculator.MonoOperatorModes.square,
+         writer(calc.calculateMono(Calculator.MonoOperatorModes.SQUARE,
                                    reader()));
       }
       
       if (source == butSquareRoot) {
-         writer(calc.calculateMono(Calculator.MonoOperatorModes.squareRoot,
+         writer(calc.calculateMono(Calculator.MonoOperatorModes.SQUARE_ROOT,
                                    reader()));
       }
       
       if (source == butOneDevidedBy) {
          writer(calc.calculateMono(
-                                   Calculator.MonoOperatorModes.oneDevidedBy, reader()));
+                                   Calculator.MonoOperatorModes.ONE_DEVIDE_BY, reader()));
       }
       
       if (source == butCos) {
-         writer(calc.calculateMono(Calculator.MonoOperatorModes.cos,
+         writer(calc.calculateMono(Calculator.MonoOperatorModes.COS,
                                    reader()));
       }
       
       if (source == butSin) {
-         writer(calc.calculateMono(Calculator.MonoOperatorModes.sin,
+         writer(calc.calculateMono(Calculator.MonoOperatorModes.SIN,
                                    reader()));
       }
       
       if (source == butTan) {
-         writer(calc.calculateMono(Calculator.MonoOperatorModes.tan,
+         writer(calc.calculateMono(Calculator.MonoOperatorModes.TAN,
                                    reader()));
       }
       if (source == butlog) {
-         writer(calc.calculateMono(Calculator.MonoOperatorModes.log,
+         writer(calc.calculateMono(Calculator.MonoOperatorModes.LOG,
                                    reader()));
       }
       if (source == butrate) {
-         writer(calc.calculateMono(Calculator.MonoOperatorModes.rate,
+         writer(calc.calculateMono(Calculator.MonoOperatorModes.RATE,
                                    reader()));
       }
       if(source == butabs){
-         writer(calc.calculateMono(Calculator.MonoOperatorModes.abs, reader()));
+         writer(calc.calculateMono(Calculator.MonoOperatorModes.ABS, reader()));
       }
       
       if (source == butEqual) {
