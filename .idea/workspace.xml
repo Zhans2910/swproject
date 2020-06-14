@@ -1,17 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="6e29549c-cc46-4737-8a2c-7ee4dae99d1a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/test/java/simplejavacalculator/CalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/simplejavacalculator/CalculatorTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
+=======
+    <list default="true" id="6aa85763-a50d-4ba5-9f20-6f6e73a8d0ba" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/simplejavacalculator/SimpleJavaCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/simplejavacalculator/SimpleJavaCalculator.java" afterDir="false" />
+    </list>
+>>>>>>> 8e6fab84ef770c531af9c76637d088a3c2977883
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
   <component name="CoverageViewManager">
     <option name="myElementSize" value="193" />
   </component>
@@ -89,10 +97,15 @@
         <option value="JUnit4 Test Class" />
       </list>
     </option>
+=======
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+>>>>>>> 8e6fab84ef770c531af9c76637d088a3c2977883
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+<<<<<<< HEAD
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -195,6 +208,17 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Zhans\IdeaProjects\swproject\src\main\java" />
     </key>
+=======
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1dIiby9x9OBqyH6bKeVbzoj4eKH" />
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+>>>>>>> 8e6fab84ef770c531af9c76637d088a3c2977883
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -208,6 +232,7 @@
       </list>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="JUnit.CalculatorTest.Test16">
     <configuration name="CalculatorTest.Test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="swproject" />
@@ -332,11 +357,14 @@
       </list>
     </recent_temporary>
   </component>
+=======
+>>>>>>> 8e6fab84ef770c531af9c76637d088a3c2977883
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+<<<<<<< HEAD
       <changelist id="6e29549c-cc46-4737-8a2c-7ee4dae99d1a" name="Default Changelist" comment="" />
       <created>1592030334827</created>
       <option name="number" value="Default" />
@@ -569,5 +597,29 @@
         </settings>
       </state>
     </states>
+=======
+      <changelist id="6aa85763-a50d-4ba5-9f20-6f6e73a8d0ba" name="Default Changelist" comment="" />
+      <created>1592119082802</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1592119082802</updated>
+      <workItem from="1592119084162" duration="71000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+>>>>>>> 8e6fab84ef770c531af9c76637d088a3c2977883
   </component>
 </project>
