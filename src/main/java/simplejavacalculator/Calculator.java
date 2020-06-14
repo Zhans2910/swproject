@@ -15,11 +15,11 @@ import static java.lang.Math.pow;
 public class Calculator {
 
     public enum BiOperatorModes {
-        NORMAL, ADD, MINUS, MULTIPLY, DIVIDE , X_POWER_OF_Y 
+        NORMAL, ADD, MINUS, MULTIPLY, DIVIDE, X_POWER_OF_Y 
     }
 
     public enum MonoOperatorModes {
-        SQUARE, SQUARE_ROOT, ONE_DEVIDE_BY, COS, SIN, TAN ,LOG , RATE, ABS
+        SQUARE, SQUARE_ROOT, ONE_DEVIDE_BY, COS, SIN, TAN, LOG, RATE, ABS
     }
 
     private Double num1;
