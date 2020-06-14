@@ -3,6 +3,8 @@ package simplejavacalculator;
 import org.junit.Assert;
 import org.junit.Test;
 
+import static java.lang.Double.NaN;
+
 public class CalculatorTest {
     @Test
     public void Test1() throws Exception{
@@ -69,6 +71,30 @@ public class CalculatorTest {
 	Double result= c.calculateBi(Calculator.BiOperatorModes.normal, 1.3);
 	Assert.assertEquals( (Double) 5.265000000000001, result);
     }
-
+    @Test
+    public void Test11() throws Exception{
+        Calculator c = new Calculator();
+        Double calculation = c.calculateMono(Calculator.MonoOperatorModes.cos, 0.0);
+        Assert.assertEquals((Double) 1.0, calculation);
+    }
+    @Test
+    public void Test12() throws Exception{
+        Calculator c = new Calculator();
+        Double calculation = c.calculateMono(Calculator.MonoOperatorModes.tan, 0.0);
+        Assert.assertEquals((Double) 0.0, calculation);
+    }
+    @Test
+    public void Test13() throws Exception{
+        Calculator c = new Calculator();
+        Double calculation = c.calculateMono(Calculator.MonoOperatorModes.tan, 90.0);
+        Assert.assertTrue(Double.isNaN(calculation));
+    }
+    @Test
+    public void Test14() throws Exception {
+        Calculator c = new Calculator();
+        c.calculateBi(Calculator.BiOperatorModes.divide, 14.0);
+        Double result= c.calculateBi(Calculator.BiOperatorModes.normal, 1.4);
+        Assert.assertEquals( (Double) 10.0, result);
+    }
 
 }
