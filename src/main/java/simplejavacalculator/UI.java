@@ -38,7 +38,7 @@ public class UI implements ActionListener {
    private final JPanel panelSub8;
    
    private final JTextArea text;
-   private final JButton but[]; 
+   private final JButton[] but; 
    private final JButton butAdd; 
    private final JButton butMinus; 
    private final JButton butMultiply; 
@@ -58,7 +58,7 @@ public class UI implements ActionListener {
    private final JButton butBinary;
    private final Calculator calc;
    
-   private final String[] buttonValue = {"0", "1", "2", "3", "4", "5", "6",
+   private static final String[] buttonValue = {"0", "1", "2", "3", "4", "5", "6",
       "7", "8", "9"};
    
    private final Font font;

@@ -16,7 +16,7 @@ public class SimpleJavaCalculator {
          uiCal.init();
       }
       catch (Exception e) {
-         System.err.println(e.getMessage());   
+         logger.println(e.getMessage());   
       }
       
    }
