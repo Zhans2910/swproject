@@ -311,7 +311,7 @@ public class UI implements ActionListener {
       try {
          text.setText("" + Long.toBinaryString(Long.parseLong(text.getText())));
       } catch (NumberFormatException ex) {
-         System.err.println("Error while parse to binary." + ex.toString());
+                 logger.log("Error while parse to binary." + ex.toString());
       }
    }
    
