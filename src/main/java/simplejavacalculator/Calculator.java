@@ -15,14 +15,15 @@ import static java.lang.Math.pow;
 public class Calculator {
 
     public enum BiOperatorModes {
-        normal, add, minus, multiply, divide , xpowerofy 
+        NORMAL, ADD, MINUS, MULTIPLY, DIVIDE , X_POWER_OF_Y 
     }
 
     public enum MonoOperatorModes {
-        square, squareRoot, oneDevidedBy, cos, sin, tan ,log , rate, abs
+        SQUARE, SQUARE_ROOT, ONE_DEVIDE_BY, COS, SIN, TAN ,LOG , RATE, ABS
     }
 
-    private Double num1, num2;
+    private Double num1;
+    private Double num2;
     private BiOperatorModes mode = BiOperatorModes.normal;
 
     private Double calculateBiImpl() {
