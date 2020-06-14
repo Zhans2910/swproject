@@ -63,11 +63,11 @@ public class CalculatorTest {
     }
 
     @Test
-	public void Test8() throws Exception {
-		Calculator c = new Calculator();
-		c.calculateBi(Calculator.BiOperatorModes.minus, 6.565);
-		Assertions.assertEquals(5.265, c.calculateBi(Calculator.BiOperatorModes.normal, 1.3));
-	}
+    public void Test8() throws Exception {
+	Calculator c = new Calculator();
+	c.calculateBi(Calculator.BiOperatorModes.minus, 6.565);
+	Assertions.assertEquals(5.265, c.calculateBi(Calculator.BiOperatorModes.normal, 1.3));
+    }
 
 
 }
