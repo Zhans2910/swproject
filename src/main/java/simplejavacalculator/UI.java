@@ -84,9 +84,12 @@ public class UI implements ActionListener {
    private final JButton butBinary;
    /**comment.*/
    private final Calculator calc;
+   /**comment.*/
    private static final String[] buttonValue = {"0", "1", "2", "3", "4", "5", "6",
       "7", "8", "9"};
+   /**comment.*/
    private final Font font;
+   /**comment.*/
    private final Font textFont;
 
    public UI() throws IOException {
