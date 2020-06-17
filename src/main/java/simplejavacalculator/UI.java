@@ -26,34 +26,63 @@ import java.io.*;
 public class UI implements ActionListener {
    /**comment.*/
    private final JFrame frame;
+   /**comment.*/
    private final JPanel panel;
+   /**comment.*/
    private final JPanel panelSub1;
+   /**comment.*/
    private final JPanel panelSub2;
+   /**comment.*/
    private final JPanel panelSub3;
+   /**comment.*/
    private final JPanel panelSub4;
+   /**comment.*/
    private final JPanel panelSub5;
+   /**comment.*/
    private final JPanel panelSub6;
+   /**comment.*/
    private final JPanel panelSub7;
+   /**comment.*/
    private final JPanel panelSub8;
+   /**comment.*/
    private final JTextArea text;
+   /**comment.*/
    private final JButton[] but;
+   /**comment.*/
    private final JButton butAdd;
+   /**comment.*/
    private final JButton butMinus;
+   /**comment.*/
    private final JButton butMultiply;
+   /**comment.*/
    private final JButton butDivide;
+   /**comment.*/
    private final JButton butEqual;
+   /**comment.*/
    private final JButton butCancel;
+   /**comment.*/
    private final JButton butSquareRoot;
+   /**comment.*/
    private final JButton butSquare;
+   /**comment.*/
    private final JButton butOneDevidedBy;
+   /**comment.*/
    private final JButton butCos;
+   /**comment.*/
    private final JButton butSin;
+   /**comment.*/
    private final JButton butTan;
+   /**comment.*/
    private final JButton butxpowerofy;
+   /**comment.*/
    private final JButton butlog;
+   /**comment.*/
    private final JButton butrate;
+   /**comment.*/
    private final JButton butabs;
+   /**comment.*/
    private final JButton butBinary;
+   /**comment.*/
    private final Calculator calc;
    private static final String[] buttonValue = {"0", "1", "2", "3", "4", "5", "6",
       "7", "8", "9"};
