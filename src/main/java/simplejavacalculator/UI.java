@@ -96,7 +96,7 @@ public class UI implements ActionListener {
       butBinary = new JButton("Bin");
       calc = new Calculator();
    }
-   public void init() {      
+   public void init() {
       frame.setSize(450, 450);
       frame.setVisible(true);
       frame.setLocationRelativeTo(null);
@@ -106,7 +106,7 @@ public class UI implements ActionListener {
       text.setEditable(false);
       for (int i = 0; i < 10; i++) {
          but[i].setFont(font);
-      }      
+      }
       butAdd.setFont(font);
       butMinus.setFont(font);
       butMultiply.setFont(font);
@@ -190,27 +190,22 @@ public class UI implements ActionListener {
    @Override
    public void actionPerformed(ActionEvent e) {
       final Object source = e.getSource();
-      
       for (int i = 0; i < 10; i++) {
          if (source == but[i]) {
             text.replaceSelection(buttonValue[i]);
             return;
          }
       }
-      
       if (source == butAdd) {
          writer(calc.calculateBi(Calculator.BiOperatorModes.ADD, reader()));
       }
-      
       if (source == butMinus) {
          writer(calc.calculateBi(Calculator.BiOperatorModes.MINUS, reader()));
       }
-      
       if (source == butMultiply) {
          writer(calc.calculateBi(Calculator.BiOperatorModes.MULTIPLY,
                                  reader()));
       }
-      
       if (source == butDivide) {
          writer(calc
                    .calculateBi(Calculator.BiOperatorModes.DIVIDE, reader()));
@@ -219,22 +214,18 @@ public class UI implements ActionListener {
          writer(calc
                    .calculateBi(Calculator.BiOperatorModes.X_POWER_OF_Y , reader()));
       }
-      
       if (source == butSquare) {
          writer(calc.calculateMono(Calculator.MonoOperatorModes.SQUARE,
                                    reader()));
       }
-      
       if (source == butSquareRoot) {
          writer(calc.calculateMono(Calculator.MonoOperatorModes.SQUARE_ROOT,
                                    reader()));
       }
-      
       if (source == butOneDevidedBy) {
          writer(calc.calculateMono(
                                    Calculator.MonoOperatorModes.ONE_DEVIDE_BY, reader()));
       }
-      
       if (source == butCos) {
          writer(calc.calculateMono(Calculator.MonoOperatorModes.COS,
                                    reader()));
