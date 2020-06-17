@@ -90,22 +90,20 @@ public class UI implements ActionListener {
       butTan = new JButton("Tan");
       butxpowerofy = new JButton("x^y");
       butlog = new JButton("log10(x)");
-      butrate = new JButton("x%");    
-      butabs = new JButton("abs(x)");    
-      butCancel = new JButton("C");    
-      butBinary = new JButton("Bin");     
+      butrate = new JButton("x%");
+      butabs = new JButton("abs(x)");
+      butCancel = new JButton("C");
+      butBinary = new JButton("Bin");
       calc = new Calculator();
    }
-   
    public void init() {      
       frame.setSize(450, 450);
       frame.setVisible(true);
-      frame.setLocationRelativeTo(null); 
+      frame.setLocationRelativeTo(null);
       frame.setResizable(false);
-      frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); 
+      frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
       text.setFont(textFont);
       text.setEditable(false);
-      
       for (int i = 0; i < 10; i++) {
          but[i].setFont(font);
       }      
@@ -125,7 +123,7 @@ public class UI implements ActionListener {
       butrate.setFont(font);
       butabs.setFont(font);
       butCancel.setFont(font);
-      butBinary.setFont(font); 
+      butBinary.setFont(font);
       panel.add(Box.createHorizontalStrut(100));
       panelSub1.add(text);
       panel.add(panelSub1);
@@ -141,7 +139,7 @@ public class UI implements ActionListener {
       panelSub3.add(but[6]);
       panelSub3.add(Box.createHorizontalStrut(15));
       panelSub3.add(butMultiply);
-      panelSub3.add(butDivide);      
+      panelSub3.add(butDivide);
       panel.add(panelSub3);
       panelSub4.add(but[7]);
       panelSub4.add(but[8]);
@@ -169,7 +167,7 @@ public class UI implements ActionListener {
       panel.add(panelSub8);
       for (int i = 0; i < 10; i++) {
          but[i].addActionListener(this);
-      }      
+      }
       butAdd.addActionListener(this);
       butMinus.addActionListener(this);
       butMultiply.addActionListener(this);
@@ -189,7 +187,6 @@ public class UI implements ActionListener {
       butCancel.addActionListener(this);
       frame.add(panel);
    }
-   
    @Override
    public void actionPerformed(ActionEvent e) {
       final Object source = e.getSource();
