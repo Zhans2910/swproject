@@ -93,10 +93,10 @@ public class UI implements ActionListener {
    private final Font textFont;
    /**comment.*/
    public UI() throws IOException {
-      public static final int eighteen = 18;
-      public static final int thirty = 30;
-      public static final int twenty_four = 24;
-      public static final int ten = 10; 
+      int eighteen = 18;
+      int thirty = 30;
+      int twenty_four = 24;
+      int ten = 10; 
       frame = new JFrame("Calculator PH");
       panel = new JPanel();
       panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
