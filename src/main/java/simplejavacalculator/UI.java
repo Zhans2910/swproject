@@ -24,9 +24,7 @@ import javax.swing.BoxLayout;
 import java.io.*;
 
 public class UI implements ActionListener {
-   
    private final JFrame frame;
-   
    private final JPanel panel;
    private final JPanel panelSub1;
    private final JPanel panelSub2;
@@ -36,7 +34,6 @@ public class UI implements ActionListener {
    private final JPanel panelSub6;
    private final JPanel panelSub7;
    private final JPanel panelSub8;
-   
    private final JTextArea text;
    private final JButton[] but; 
    private final JButton butAdd; 
@@ -57,18 +54,13 @@ public class UI implements ActionListener {
    private final JButton butabs;
    private final JButton butBinary;
    private final Calculator calc;
-   
    private static final String[] buttonValue = {"0", "1", "2", "3", "4", "5", "6",
       "7", "8", "9"};
-   
    private final Font font;
    private final Font textFont;
 
-   
    public UI() throws IOException {
       frame = new JFrame("Calculator PH");
-
-      
       panel = new JPanel();
       panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
       panelSub1 = new JPanel(new FlowLayout());
@@ -79,14 +71,11 @@ public class UI implements ActionListener {
       panelSub6 = new JPanel(new FlowLayout());
       panelSub7 = new JPanel(new FlowLayout());
       panelSub8 = new JPanel(new FlowLayout());
-      
       font = new Font("Consolas",Font.PLAIN, 18);
-      
       text = new JTextArea(1, 30);
-      
       textFont = new Font("Consolas",Font.BOLD, 24);
       
-      but = new JButton[10];      
+      but = new JButton[10];     
       for (int i = 0; i < 10; i++) {
          but[i] = new JButton(String.valueOf(i));
       }      
@@ -107,9 +96,7 @@ public class UI implements ActionListener {
       butabs = new JButton("abs(x)");      
       butCancel = new JButton("C");      
       butBinary = new JButton("Bin");      
-      
       calc = new Calculator();
-      
    }
    
    public void init() {      
@@ -118,8 +105,6 @@ public class UI implements ActionListener {
       frame.setLocationRelativeTo(null); 
       frame.setResizable(false);
       frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); 
-
-      
       text.setFont(textFont);
       text.setEditable(false);
       
@@ -143,11 +128,9 @@ public class UI implements ActionListener {
       butabs.setFont(font);
       butCancel.setFont(font);
       butBinary.setFont(font); 
-      
       panel.add(Box.createHorizontalStrut(100));
       panelSub1.add(text);
       panel.add(panelSub1);
-      
       panelSub2.add(but[1]);
       panelSub2.add(but[2]);
       panelSub2.add(but[3]);
@@ -155,7 +138,6 @@ public class UI implements ActionListener {
       panelSub2.add(butAdd);
       panelSub2.add(butMinus);
       panel.add(panelSub2);
-      
       panelSub3.add(but[4]);
       panelSub3.add(but[5]);
       panelSub3.add(but[6]);
@@ -163,7 +145,6 @@ public class UI implements ActionListener {
       panelSub3.add(butMultiply);
       panelSub3.add(butDivide);      
       panel.add(panelSub3);
-      
       panelSub4.add(but[7]);
       panelSub4.add(but[8]);
       panelSub4.add(but[9]);
@@ -171,28 +152,23 @@ public class UI implements ActionListener {
       panelSub4.add(butEqual);
       panelSub4.add(butCancel);
       panel.add(panelSub4);
-      
       panelSub5.add(but[0]);
       panelSub5.add(Box.createHorizontalStrut(210));
       panel.add(panelSub5);
-      
       panelSub6.add(butSquare);
       panelSub6.add(butSquareRoot);
       panelSub6.add(butOneDevidedBy);
       panelSub6.add(butxpowerofy);
       panel.add(panelSub6);
-      
       panelSub7.add(butCos);
       panelSub7.add(butSin);
       panelSub7.add(butTan);
       panel.add(panelSub7);
-      
       panelSub8.add(butlog);
       panelSub8.add(butrate);
       panelSub8.add(butabs);
       panelSub8.add(butBinary);
       panel.add(panelSub8);
-      
       for (int i = 0; i < 10; i++) {
          but[i].addActionListener(this);
       }      
@@ -211,10 +187,8 @@ public class UI implements ActionListener {
       butrate.addActionListener(this);
       butabs.addActionListener(this);
       butBinary.addActionListener(this);
-      
       butEqual.addActionListener(this);
       butCancel.addActionListener(this);
-      
       frame.add(panel);
    }
    
