@@ -91,7 +91,7 @@ public class UI implements ActionListener {
    private final Font font;
    /**comment.*/
    private final Font textFont;
-
+   /**comment.*/
    public UI() throws IOException {
       frame = new JFrame("Calculator PH");
       panel = new JPanel();
@@ -129,6 +129,7 @@ public class UI implements ActionListener {
       butBinary = new JButton("Bin");
       calc = new Calculator();
    }
+   /**comment.*/
    public void init() {
       frame.setSize(450, 450);
       frame.setVisible(true);
@@ -300,6 +301,7 @@ public class UI implements ActionListener {
          System.err.println("Error while parse to binary." + ex.toString());
       }
    }
+   /**comment.*/
    public Double reader() {
       Double num;
       String str;
@@ -307,6 +309,7 @@ public class UI implements ActionListener {
       num = Double.valueOf(str);
       return num;
    }
+   /**comment.*/
    public void writer(final Double num) {
       if (Double.isNaN(num)) {
          text.setText("");
