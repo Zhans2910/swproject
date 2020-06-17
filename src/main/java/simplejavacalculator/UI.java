@@ -93,6 +93,10 @@ public class UI implements ActionListener {
    private final Font textFont;
    /**comment.*/
    public UI() throws IOException {
+      public static final int eighteen = 18;
+      public static final int thirty = 30;
+      public static final int twenty_four = 24;
+      public static final int ten = 10; 
       frame = new JFrame("Calculator PH");
       panel = new JPanel();
       panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
@@ -104,11 +108,11 @@ public class UI implements ActionListener {
       panelSub6 = new JPanel(new FlowLayout());
       panelSub7 = new JPanel(new FlowLayout());
       panelSub8 = new JPanel(new FlowLayout());
-      font = new Font("Consolas",Font.PLAIN, 18);
-      text = new JTextArea(1, 30);
-      textFont = new Font("Consolas",Font.BOLD, 24);
-      but = new JButton[10];
-      for (int i = 0; i < 10; i++){
+      font = new Font("Consolas",Font.PLAIN, eighteen);
+      text = new JTextArea(1, thirty);
+      textFont = new Font("Consolas",Font.BOLD, twenty-four);
+      but = new JButton[ten];
+      for (int i = 0; i < ten; i++){
          but[i] = new JButton(String.valueOf(i));}
       butAdd = new JButton("+");
       butMinus = new JButton("-");
