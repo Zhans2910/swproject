@@ -108,7 +108,7 @@ public class UI implements ActionListener {
       text = new JTextArea(1, 30);
       textFont = new Font("Consolas",Font.BOLD, 24);
       but = new JButton[10];
-      for (int i = 0; i < ten; i++){
+      for (int i = 0; i < 10; i++){
          but[i] = new JButton(String.valueOf(i));}
       butAdd = new JButton("+");
       butMinus = new JButton("-");
