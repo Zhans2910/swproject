@@ -35,7 +35,7 @@ public class UI implements ActionListener {
    private final JPanel panelSub7;
    private final JPanel panelSub8;
    private final JTextArea text;
-   private final JButton[] but; 
+   private final JButton[] but;
    private final JButton butAdd; 
    private final JButton butMinus; 
    private final JButton butMultiply; 
