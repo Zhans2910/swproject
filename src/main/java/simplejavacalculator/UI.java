@@ -230,12 +230,10 @@ public class UI implements ActionListener {
          writer(calc.calculateMono(Calculator.MonoOperatorModes.COS,
                                    reader()));
       }
-      
       if (source == butSin) {
          writer(calc.calculateMono(Calculator.MonoOperatorModes.SIN,
                                    reader()));
       }
-      
       if (source == butTan) {
          writer(calc.calculateMono(Calculator.MonoOperatorModes.TAN,
                                    reader()));
@@ -251,22 +249,17 @@ public class UI implements ActionListener {
       if(source == butabs){
          writer(calc.calculateMono(Calculator.MonoOperatorModes.ABS, reader()));
       }
-      
       if (source == butEqual) {
          writer(calc.calculateEqual(reader()));
       }
-      
       if (source == butCancel) {
          writer(calc.reset());
       }
-      
       if (source == butBinary) {
          parsetoBinary();
       }
-      
       text.selectAll();
    }
-   
    private void parsetoBinary() {
       try {
          text.setText("" + Long.toBinaryString(Long.parseLong(text.getText())));
@@ -274,16 +267,13 @@ public class UI implements ActionListener {
          System.err.println("Error while parse to binary." + ex.toString());
       }
    }
-   
    public Double reader() {
       Double num;
       String str;
       str = text.getText();
       num = Double.valueOf(str);
-      
       return num;
    }
-   
    public void writer(final Double num) {
       if (Double.isNaN(num)) {
          text.setText("");
