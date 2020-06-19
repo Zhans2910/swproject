@@ -108,12 +108,12 @@ public class UI implements ActionListener {
       panelSub6 = new JPanel(new FlowLayout());
       panelSub7 = new JPanel(new FlowLayout());
       panelSub8 = new JPanel(new FlowLayout());
-      font = new Font("Consolas",Font.PLAIN, oneeight);
+      font = new Font("Consolas", Font.PLAIN, oneeight);
       text = new JTextArea(1, thirty);
-      textFont = new Font("Consolas",Font.BOLD, twofour);
+      textFont = new Font("Consolas", Font.BOLD, twofour);
       but = new JButton[tenn];
       for (int i = 0; i < tenn; i++){
-         but[i] = new JButton(String.valueOf(i));}
+         but[i] = new JButton(String.valueOf(i)); }
       butAdd = new JButton("+");
       butMinus = new JButton("-");
       butMultiply = new JButton("*");
@@ -298,7 +298,7 @@ public class UI implements ActionListener {
          writer(calc.calculateMono(Calculator.MonoOperatorModes.RATE,
                                    reader()));
       }
-      if(source == butabs){
+      if (source == butabs){
          writer(calc.calculateMono(Calculator.MonoOperatorModes.ABS, reader()));
       }
       if (source == butEqual) {
