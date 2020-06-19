@@ -240,6 +240,7 @@ public class UI implements ActionListener {
    }
    @Override
    public void actionPerformed(ActionEvent e) {
+      final int tenn = 10;
       final Object source = e.getSource();
       for (int i = 0; i < tenn; i++) {
          if (source == but[i]) {
