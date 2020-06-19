@@ -135,6 +135,7 @@ public class UI implements ActionListener {
    }
    /**comment.*/
    public void init() {
+      final int tenn = 10;
       final int w = 450;
       final int h = 450;
       final int twoonezero = 210;
