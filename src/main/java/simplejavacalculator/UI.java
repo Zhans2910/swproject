@@ -85,7 +85,7 @@ public class UI implements ActionListener {
    /**comment.*/
    private final Calculator calc;
    /**comment.*/
-   private static final String[] buttonValue = {"0", "1", "2", "3", 
+   private static final String[] buttonValue = {"0", "1", "2", "3",
       "4", "5", "6",
       "7", "8", "9"};
    /**comment.*/
@@ -265,7 +265,7 @@ public class UI implements ActionListener {
       }
       if (source == butxpowerofy) {
          writer(calc
-                   .calculateBi(Calculator.BiOperatorModes.X_POWER_OF_Y , 
+                   .calculateBi(Calculator.BiOperatorModes.X_POWER_OF_Y,
                                 reader()));
       }
       if (source == butSquare) {
@@ -278,7 +278,7 @@ public class UI implements ActionListener {
       }
       if (source == butOneDevidedBy) {
          writer(calc.calculateMono(
-                                   Calculator.MonoOperatorModes.ONE_DEVIDE_BY, 
+                                   Calculator.MonoOperatorModes.ONE_DEVIDE_BY,
             reader()));
       }
       if (source == butCos) {
