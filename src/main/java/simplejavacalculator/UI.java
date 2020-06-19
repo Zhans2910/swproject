@@ -322,7 +322,7 @@ public class UI implements ActionListener {
          System.err.println("Error while parse to binary." + ex.toString());
       }
    }
-   /**@return.*/
+   /**@return number.*/
    public Double reader() {
       Double num;
       String str;
@@ -330,7 +330,7 @@ public class UI implements ActionListener {
       num = Double.valueOf(str);
       return num;
    }
-   /**@return.*/
+   /**@param num.*/
    public void writer(final Double num) {
       if (Double.isNaN(num)) {
          text.setText("");
