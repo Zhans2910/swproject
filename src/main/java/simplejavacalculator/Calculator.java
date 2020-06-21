@@ -57,7 +57,10 @@ public class Calculator {
         // never reach
         throw new Error();
     }
-
+    /** @return desired operation of two numbers.
+     * @param num of two numbers is taken.
+     * @param newMode type of operation.
+     */
     public Double calculateBi(BiOperatorModes newMode, Double num) {
         if (mode == BiOperatorModes.NORMAL) {
             num2 = 0.0;
