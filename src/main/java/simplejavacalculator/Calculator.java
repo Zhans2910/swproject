@@ -20,6 +20,7 @@ public class Calculator {
     }
 
     public enum MonoOperatorModes {
+        /**comment.*/
         SQUARE, SQUARE_ROOT, ONE_DEVIDE_BY, COS, SIN, TAN, LOG, RATE, ABS
     }
 
