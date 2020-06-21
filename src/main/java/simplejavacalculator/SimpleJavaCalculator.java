@@ -13,8 +13,8 @@ public class SimpleJavaCalculator {
    public static void main(final String[] args) {
       try {
          UI uiCal = new UI();
-         uiCal.init(); }
-      catch (Exception e) {
+         uiCal.init(); 
+      } catch (Exception e) {
          System.err.println(e.getMessage());
       }
    }
