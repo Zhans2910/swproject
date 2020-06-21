@@ -16,7 +16,7 @@ public class Calculator {
 
     public enum BiOperatorModes {
         /**comment.*/
-        NORMAL, ADD, MINUS, MULTIPLY, DIVIDE, X_POWER_OF_Y 
+        NORMAL, ADD, MINUS, MULTIPLY, DIVIDE, X_POWER_OF_Y
     }
 
     public enum MonoOperatorModes {
@@ -51,7 +51,7 @@ public class Calculator {
             return num1 / num2;
         }
         if (mode == BiOperatorModes.X_POWER_OF_Y) {
-            return pow(num1,num2);
+            return pow(num1, num2);
         }
 
         // never reach
@@ -93,7 +93,7 @@ public class Calculator {
      * @param num is taken.
      * @param newMode is type of operation
      */
-    public Double calculateMono(final MonoOperatorModes newMode, 
+    public Double calculateMono(final MonoOperatorModes newMode,
                                 final Double num) {
         final int oneeightzero = 180;
         final int nineone = 90;
@@ -129,7 +129,7 @@ public class Calculator {
         if (newMode == MonoOperatorModes.RATE) {
            return num / hundredd;
         }
-        if (newMode == MonoOperatorModes.ABS){
+        if (newMode == MonoOperatorModes.ABS) {
             return Math.abs(num);
         }
 
