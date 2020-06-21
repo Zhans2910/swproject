@@ -8,7 +8,10 @@
 
 package simplejavacalculator;
 
-public class SimpleJavaCalculator {
+public final class SimpleJavaCalculator {
+   private SimpleJavaCalculator() {
+      //??
+   }
    /** @param args for args*/
    public static void main(final String[] args) {
       try {
