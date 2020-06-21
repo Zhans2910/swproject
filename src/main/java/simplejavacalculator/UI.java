@@ -330,7 +330,7 @@ public class UI implements ActionListener {
       num = Double.valueOf(str);
       return num;
    }
-   /**@param number.*/
+   /**@param num for taking number.*/
    public void writer(final Double num) {
       if (Double.isNaN(num)) {
          text.setText("");
