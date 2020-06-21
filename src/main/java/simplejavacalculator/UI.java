@@ -85,7 +85,7 @@ public class UI implements ActionListener {
    /**comment.*/
    private final Calculator calc;
    /**comment.*/
-   private static final String[] buttonValue = {"0", "1", "2", "3",
+   private static final String[] BUTTON_VALUE = {"0", "1", "2", "3",
       "4", "5", "6",
       "7", "8", "9"};
    /**comment.*/
@@ -240,7 +240,10 @@ public class UI implements ActionListener {
       frame.add(panel);
    }
    @Override
-   public void actionPerformed(ActionEvent e) {
+   /** @return simple.
+    * @param e for parameter.
+    */
+   public void actionPerformed(final ActionEvent e) {
       final int tenn = 10;
       final Object source = e.getSource();
       for (int i = 0; i < tenn; i++) {
