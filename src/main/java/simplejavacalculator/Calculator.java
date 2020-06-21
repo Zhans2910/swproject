@@ -23,9 +23,11 @@ public class Calculator {
         /**comment.*/
         SQUARE, SQUARE_ROOT, ONE_DEVIDE_BY, COS, SIN, TAN, LOG, RATE, ABS
     }
-
+    /**comment.*/
     private Double num1;
+    /**comment.*/
     private Double num2;
+    /**comment.*/
     private BiOperatorModes mode = BiOperatorModes.NORMAL;
 
     private Double calculateBiImpl() {
