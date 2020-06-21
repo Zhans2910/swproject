@@ -21,7 +21,6 @@ import javax.swing.Box;
 import javax.swing.BoxLayout;
 
 
-import java.io.*;
 
 public class UI implements ActionListener {
    /**comment.*/
