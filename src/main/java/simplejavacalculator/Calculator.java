@@ -80,7 +80,11 @@ public class Calculator {
     public Double calculateEqual(final Double num) {
         return calculateBi(BiOperatorModes.NORMAL, num);
     }
-
+    /** @return desired to return NaN.
+     * @param num2 one of two numbers is taken.
+     * @param num1 second of two numbers is taken.
+     * @param mode noraml operator.
+     */
     public Double reset() {
         num2 = 0.0;
         num1 = 0.0;
