@@ -248,7 +248,7 @@ public class UI implements ActionListener {
       final Object source = e.getSource();
       for (int i = 0; i < tenn; i++) {
          if (source == but[i]) {
-            text.replaceSelection(buttonValue[i]);
+            text.replaceSelection(BUTTON_VALUE[i]);
             return;
          }
       }
