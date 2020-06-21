@@ -85,6 +85,9 @@ public class Calculator {
     }
 
     public Double calculateMono(MonoOperatorModes newMode, Double num) {
+        final int oneeightzero = 180;
+        final int nineone = 90;
+        final int hundredd = 100;
         if (newMode == MonoOperatorModes.SQUARE) {
             return num * num;
         }
@@ -101,10 +104,10 @@ public class Calculator {
             return Math.sin(num);
         }
         if (newMode == MonoOperatorModes.TAN) {
-            if (num == 0 || num % 180 == 0) {
+            if (num == 0 || num % oneeightzero == 0) {
                 return 0.0;
             }
-            if (num % 90 == 0 && num % 180 != 0) {
+            if (num % nineone == 0 && num % oneeightzero != 0) {
                 return NaN;
             }
 
@@ -114,7 +117,7 @@ public class Calculator {
             return log10(num);
         }
         if (newMode == MonoOperatorModes.RATE) {
-           return num / 100;
+           return num / hundredd;
         }
         if (newMode == MonoOperatorModes.ABS){
             return Math.abs(num);
