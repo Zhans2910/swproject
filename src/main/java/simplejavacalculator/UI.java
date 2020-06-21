@@ -20,7 +20,6 @@ import java.awt.Font;
 import javax.swing.Box;
 import javax.swing.BoxLayout;
 
-import java.io.*;
 
 public class UI implements ActionListener {
    /**comment.*/
@@ -92,7 +91,7 @@ public class UI implements ActionListener {
    /**comment.*/
    private final Font textFont;
    /**comment.*/
-   public UI() throws IOException {
+   public UI() {
       final int oneeight = 18;
       final int thirty = 30;
       final int twofour = 24;
