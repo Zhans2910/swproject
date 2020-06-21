@@ -240,9 +240,7 @@ public class UI implements ActionListener {
       frame.add(panel);
    }
    @Override
-   /** @return simple.
-    * @param e for parameter.
-    */
+   /** @param e for parameter.*/
    public void actionPerformed(final ActionEvent e) {
       final int tenn = 10;
       final Object source = e.getSource();
