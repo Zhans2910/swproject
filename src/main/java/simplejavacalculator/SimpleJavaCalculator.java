@@ -9,11 +9,12 @@
 package simplejavacalculator;
 
 public class SimpleJavaCalculator {
-   /** making some things.*/
+   /** @param args for args*/
    public static void main(final String[] args) {
       try {
          UI uiCal = new UI();
-         uiCal.init(); }
+         uiCal.init(); 
+      }
       catch (Exception e) {
          System.err.println(e.getMessage());
       }
